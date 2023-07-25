@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --gray-one: #333333;
+    --gray-two: #4F4F4F;
+    --footer-gray: #BDBDBD;
+    --white-white: #ffffff
+
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+
+.main-container{
+    padding: 0px 25px;
+
+    /* border: 1px solid red; */
+
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* INTRO CONTAINER START */
+
+#header-container-404{
+    padding: 20px 0px;
+}
+
+#header-container-404 .container a{
+    color: var(--gray-one);
+    font-size: 14px;
+    text-align: left;
+
+}
+
+/* INTRO CONTAINER START */
+
+#intro-container-404 {
+    padding: 30px 0px;
+        min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#intro-container-404 .container{
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-content: center;
+    place-items: center;
+}
+
+#intro-container-404 .intro-image{
+    width: 300px;
+    height: 300px;
+}
+
+#intro-container-404 .intro-content{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    
+}
+#intro-container-404 .intro-content > *{
+    margin-bottom: 20px ;
+}
+
+#intro-container-404 .intro-content h3{
+    font-size: 30px;
+}
+#intro-container-404 .intro-content p{
+    font-size: 18px;
+
+}
+
+#intro-container-404 .intro-content a{
+    background: var(--gray-one);
+    padding: 20px 30px;
+    text-align: center;
+    color: var(--white-white);
+    display: block;
+    align-self: flex-start;
+    transition: background .3s ease-in-out;
+}
+#intro-container-404 .intro-content a:hover{
+    background: var(--gray-two);
+    /* transition: all .3s ease-in-out; */
+}
+
+@media screen and (min-width: 768px){
+   #intro-container-404 .container{
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    #intro-container-404 .intro-image{
+        width: initial;
+        height: initial;
+        padding: 0px 30px;
+}
+
+    #intro-container-404 .intro-content h3{
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (min-width: 900px){
+
+    #intro-container-404 .intro-content h3{
+        font-size: 50px;
+    }
+    #intro-container-404 .intro-content p{
+    font-size: 20px;
+
+}
+}
+
+@media screen and (min-width: 1200px){
+#intro-container-404 .intro-content > *{
+        max-width: 600px;
+
+      }
+
+    #intro-container-404 .intro-content h3{
+        font-size: 60px;
+    }
+
+}
